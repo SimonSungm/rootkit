@@ -1,8 +1,8 @@
 # Warning
-This module cannot be removed from kernel by command rmmod yet. So please create a virtual machine snapshot before using it.
+This module can be removed by rmmod -f rt.
 ## Porting
-porting the module to higher version of Linux kernel, tested on Ubuntu 18.04, Linux kernel 5.0
-
+Porting the module to higher version of Linux kernel, tested on Ubuntu 18.04, Linux kernel 5.0
+For lower kernel version (e.g. 4.15), change /usr/src/linux-headers-4.15.0-91-generic/include/linux/fs.h , remove the const before dir_context actor.
 
 # Sample Rootkit for Linux
 ## About
